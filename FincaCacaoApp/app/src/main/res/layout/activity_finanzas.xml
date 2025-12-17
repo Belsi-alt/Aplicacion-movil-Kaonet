@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_brown">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Módulo de Finanzas"
+        android:textSize="20sp"
+        android:textColor="@color/dark_brown"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnSiembra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/siembra"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCrecimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crecimiento"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCosecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cosecha"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/venta"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start" />
+
+</LinearLayout>

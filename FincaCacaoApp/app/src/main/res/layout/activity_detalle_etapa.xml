@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_estandar"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header con información de la etapa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Título Principal -->
+            <TextView
+                android:id="@+id/tvNombreEtapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siembra"
+                android:textColor="@color/verde_principal"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/tvInfoCicloLote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciclo 1 - Lote 1"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Sección: Detalles de la etapa -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalles de la etapa"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/tvDescripcionEtapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preparación del suelo y abono"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tabla de fechas y estado -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp">
+
+                <!-- Fila: Fecha inicio -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Fecha inicio"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvFechaInicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22/06/2023"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Fila: Fecha fin -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Fecha fin"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvFechaFin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25/06/2023"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Fila: Estado -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Estado"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvEstado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completado"
+                        android:textColor="@color/verde_principal"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!-- Botones Editar y Eliminar - ENCIMA DEL TÍTULO ETAPAS -->
+    <LinearLayout
+        android:id="@+id/botonesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/descripcionLayout"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEditarEtapa"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="✏️ Editar"
+            android:textSize="14sp"
+            android:backgroundTint="#E9E5E5"
+            android:textColor="#333333"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnEliminarEtapa"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🗑️ Eliminar"
+            android:textSize="14sp"
+            android:backgroundTint="#FF6B6B"
+            android:textColor="@color/fondo_blanco"
+            android:layout_marginStart="8dp" />
+
+</LinearLayout>
+        <!-- Sección: Gastos registrados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Header de gastos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gastos registrados"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Botón para agregar gasto -->
+                <Button
+                    android:id="@+id/btnAgregarGasto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/verde_principal"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+            </LinearLayout>
+
+            <!-- Container para gastos -->
+            <LinearLayout
+                android:id="@+id/containerGastos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Mensaje cuando no hay gastos -->
+            <TextView
+                android:id="@+id/tvSinGastos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No hay gastos registrados para esta etapa"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="32dp" />
+
+        </LinearLayout>
+
+        <!-- Sección: Ventas registradas -->
+        <LinearLayout
+            android:id="@+id/seccionVentas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="2dp">
+
+            <!-- Header de ventas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ventas registradas"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Botón para agregar venta -->
+                <Button
+                    android:id="@+id/btnAgregarVenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/verde_principal"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+            </LinearLayout>
+
+            <!-- Container para ventas -->
+            <LinearLayout
+                android:id="@+id/containerVentas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Mensaje cuando no hay ventas -->
+            <TextView
+                android:id="@+id/tvSinVentas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No hay ventas registradas para esta etapa"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="32dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

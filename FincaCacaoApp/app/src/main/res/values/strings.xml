@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KaoNet</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="welcome">Bienvenido a Finca Cacao</string>
+    <string name="finanzas_module">Finanzas</string>
+    <string name="informes_module">Informes</string>
+    <string name="siembra">Siembra</string>
+    <string name="crecimiento">Crecimiento</string>
+    <string name="cosecha">Cosecha</string>
+    <string name="venta">Venta</string>
+    <string name="back">Atrás</string>
+</resources>

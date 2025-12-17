@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_estandar"
+    android:padding="32dp"
+    android:paddingTop="80dp">
+
+    <!-- Header con información del lote -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvDetalleNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Lote Norte"
+            android:textColor="@color/verde_principal"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetallePlantas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="500 plantas"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Sección SIEMBRA -->
+    <LinearLayout
+        android:id="@+id/siembraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIEMBRA"
+            android:textColor="@color/verde_principal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetalleFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha siembra: 15/03/2024"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvDetalleDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del lote..."
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Botones Editar y Eliminar - ENCIMA DEL TÍTULO CICLOS -->
+    <LinearLayout
+        android:id="@+id/botonesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/siembraLayout"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEditarLote"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:textSize="14sp"
+            android:backgroundTint="#E9E5E5"
+            android:textColor="#333333"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnEliminarLote"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Eliminar"
+            android:textSize="14sp"
+            android:backgroundTint="#FF6B6B"
+            android:textColor="@color/fondo_blanco"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Sección CICLOS -->
+    <TextView
+        android:id="@+id/ciclosTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciclos"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/botonesLayout"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Contenedor para la lista de ciclos -->
+    <LinearLayout
+        android:id="@+id/containerCiclos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ciclosTitle"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Mensaje cuando no hay ciclos -->
+    <TextView
+        android:id="@+id/tvCiclosVacios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hay ciclos registrados"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_below="@id/ciclosTitle"
+        android:layout_marginBottom="20dp" />
+
+    <!-- FAB para Agregar Ciclo -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregarCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/verde_principal"
+        app:tint="@color/fondo_blanco" />
+
+</RelativeLayout>

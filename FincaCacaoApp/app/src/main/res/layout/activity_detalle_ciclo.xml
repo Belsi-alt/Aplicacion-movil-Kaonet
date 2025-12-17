@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_estandar"
+    android:padding="24dp"
+    android:paddingTop="60dp">
+
+    <!-- Header con información del ciclo -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvNombreCiclo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Ciclo Norte - Primavera 2024"
+            android:textColor="@color/verde_principal"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInfoCiclo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciclo 1 • Activo • 500 plantas"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Sección FECHAS -->
+    <LinearLayout
+        android:id="@+id/fechasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 FECHAS"
+            android:textColor="@color/verde_principal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicio: 15/03/2024"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fin: 15/09/2024"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Sección DESCRIPCIÓN -->
+    <LinearLayout
+        android:id="@+id/descripcionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        android:layout_below="@id/fechasLayout"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 DESCRIPCIÓN"
+            android:textColor="@color/verde_principal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDescripcionCiclo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciclo de cultivo para la zona norte de la finca..."
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+
+    <!-- Botones Editar y Eliminar - ENCIMA DEL TÍTULO ETAPAS -->
+    <LinearLayout
+        android:id="@+id/botonesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/descripcionLayout"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnEditarCiclo"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="✏️ Editar"
+            android:textSize="14sp"
+            android:backgroundTint="#E9E5E5"
+            android:textColor="#333333"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnEliminarCiclo"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="🗑️ Eliminar"
+            android:textSize="14sp"
+            android:backgroundTint="#FF6B6B"
+            android:textColor="@color/fondo_blanco"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Sección ETAPAS -->
+    <TextView
+        android:id="@+id/etapasTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌱 ETAPAS DEL CICLO"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/botonesLayout"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Lista de etapas -->
+    <LinearLayout
+        android:id="@+id/containerEtapas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/etapasTitle"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Mensaje cuando no hay etapas -->
+    <TextView
+        android:id="@+id/tvEtapasVacios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hay etapas registradas"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_below="@id/etapasTitle"
+        android:layout_marginBottom="20dp" />
+
+    <!-- FAB para Agregar Etapa -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregarEtapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/verde_principal"
+        app:tint="@color/fondo_blanco" />
+
+</RelativeLayout>

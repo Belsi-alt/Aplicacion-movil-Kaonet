@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_estandar"
+    android:gravity="center"
+    android:padding="32dp"
+    android:paddingTop="80dp">
+
+    <!-- Título Principal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Ciclo"
+        android:textColor="@color/verde_principal"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo ciclo de cultivo"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Campo: Nombre del Ciclo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del ciclo"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etNombreCiclo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Ej: Ciclo 1 - Primavera 2024"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Fecha de Inicio -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de inicio"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Seleccionar fecha"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Fecha de Fin -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de fin"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etFechaFin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Seleccionar fecha"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Estado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado del ciclo"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioActivo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Activo"
+            android:checked="true"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioTerminado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terminado"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Campo: Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDescripcionCiclo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Descripción del ciclo..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Botón Agregar -->
+    <Button
+        android:id="@+id/btnAgregarCiclo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Agregar Ciclo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/verde_principal"
+        android:textColor="@color/fondo_blanco"
+        android:elevation="4dp" />
+
+</LinearLayout>

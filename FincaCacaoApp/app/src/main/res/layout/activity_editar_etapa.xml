@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_estandar"
+    android:gravity="center"
+    android:padding="32dp"
+    android:paddingTop="80dp">
+
+    <!-- Título Principal -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Etapa"
+        android:textColor="@color/verde_principal"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo: Nombre de la Etapa -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la etapa *"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerNombreEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDescripcionEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Descripción de la etapa..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Fecha de Inicio -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de inicio *"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etFechaInicioEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Seleccionar fecha"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Fecha de Fin -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de fin"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etFechaFinEtapa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Seleccionar fecha (opcional)"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Estado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado de la etapa"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+
+    <!-- RadioGroup para agrupar los RadioButtons -->
+    <RadioGroup
+        android:id="@+id/radioGroupEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp">
+
+        <RadioButton
+            android:id="@+id/radioPendiente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pendiente"
+            android:checked="true"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioEnProgreso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="En Progreso"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioCompletada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Completada"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <!-- Botón Agregar -->
+    <Button
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:backgroundTint="@color/verde_principal"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

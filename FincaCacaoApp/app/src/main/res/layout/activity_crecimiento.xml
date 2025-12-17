@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_brown">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costos de Crecimiento"
+            android:textSize="20sp"
+            android:textColor="@color/dark_brown"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/etFertilizantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Costo de fertilizantes"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/etRiego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Costo de riego"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/etMantenimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Costo de mantenimiento"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/etPlaguicidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Costo de plaguicidas"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <Button
+            android:id="@+id/btnGuardarCrecimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnBackCrecimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_estandar"
+    android:gravity="center"
+    android:padding="32dp"
+    android:paddingTop="60dp">
+
+    <!-- Título Principal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Lote"
+        android:textColor="@color/verde_principal"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar información del lote"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Campo: Nombre -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etNombreLote"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Ingresa el nombre del lote"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Cantidad sembrada -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad sembrada"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Número de plantas"
+        android:inputType="number"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Fecha -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Seleccionar fecha"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo: Estado -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Switch
+        android:id="@+id/switchEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activo"
+        android:textSize="16sp"
+        android:checked="true"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Botón Actualizar -->
+    <Button
+        android:id="@+id/btnActualizarLote"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Actualizar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/verde_principal"
+        android:textColor="@color/fondo_blanco"
+        android:elevation="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvNombreLote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lote Norte"
+            android:textSize="18sp"
+            android:textColor="@color/dark_brown"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvPlantas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="500 plantas"
+                android:textSize="14sp"
+                android:textColor="@color/brown" />
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIEMBRA"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFechaSiembra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siembra: 15/03/2024"
+            android:textSize="12sp"
+            android:textColor="@color/dark_brown"
+            android:layout_marginTop="4dp" />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

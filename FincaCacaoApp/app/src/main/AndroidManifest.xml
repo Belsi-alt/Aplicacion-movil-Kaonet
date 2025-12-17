@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fincacacaoapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.FincaCacaoApp"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- MainActivity será la pantalla de inicio (Splash) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Las demás actividades -->
+        <activity android:name=".LotesActivity" />
+        <activity android:name=".GastosActivity" />
+        <activity android:name=".CosechasActivity" />
+        <activity android:name=".VentasActivity" />
+        <activity android:name=".InformesActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistroActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".FinanzasActivity" />
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".SiembraActivity" />
+        <activity android:name=".CrecimientoActivity" />
+        <activity android:name=".CosechaActivity" />
+        <activity android:name=".VentaActivity" />
+        <activity android:name=".DetalleLoteActivity" />
+        <activity android:name=".CrearLoteActivity" />
+        <activity android:name=".EditarLoteActivity" />
+        <activity android:name=".AgregarCicloActivity" />
+        <activity android:name=".AgregarEtapaActivity" />
+        <activity android:name=".DetalleCicloActivity"/>
+        <activity android:name=".DetalleEtapaActivity"/>
+        <activity android:name=".AgregarGastoActivity"/>
+        <activity android:name=".EditarEtapaActivity"/>
+        <activity android:name=".AgregarVentaActivity"/>
+        <activity android:name=".EditarCicloActivity"/>
+        <activity android:name=".EditarVentaActivity"/>
+        <activity android:name=".EditarGastoActivity"/>
+        <activity android:name=".CalculosFinancieros"/>
+
+
+
+
+
+        <!-- FILE PROVIDER PARA COMPARTIR PDF -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

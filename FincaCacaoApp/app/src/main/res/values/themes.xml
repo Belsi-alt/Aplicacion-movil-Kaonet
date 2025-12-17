@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema SIN Action Bar -->
+    <style name="Theme.FincaCacaoApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/verde_principal</item>
+        <item name="colorPrimaryVariant">@color/verde_brillante</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

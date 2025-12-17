@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_brown">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos de Venta"
+            android:textSize="20sp"
+            android:textColor="@color/dark_brown"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/etKgVendidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kg de cacao vendidos"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/etPrecioKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio por kg ($)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/etIngresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresos totales"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/etCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cliente/Comprador"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background" />
+
+        <Button
+            android:id="@+id/btnCalcularVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Ingresos"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnGuardarVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Venta"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnBackVenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+
+    </LinearLayout>
+</ScrollView>
